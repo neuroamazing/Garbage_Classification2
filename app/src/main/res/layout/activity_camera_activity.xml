@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+
+
+    <ImageButton
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="400dp"
+        android:contentDescription="@string/button"
+
+        android:src="@drawable/ic_camera" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera_text"
+        app:layout_anchor="@+id/camera"
+        app:layout_anchorGravity="bottom|center" />
+
+    <Button
+        android:id="@+id/button_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center"
+        android:background="#4F03554B"
+        android:textColor="#0F0E0E"
+        android:text="@string/Button_image_album" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
